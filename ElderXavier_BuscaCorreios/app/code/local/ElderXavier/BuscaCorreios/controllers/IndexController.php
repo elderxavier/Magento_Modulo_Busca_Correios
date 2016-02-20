@@ -16,7 +16,11 @@ class ElderXavier_BuscaCorreios_IndexController extends Mage_Core_Controller_Fro
                 "title" => $this->__("Busca Correios")
 		   ));
 
-      $this->renderLayout(); 
-	  
+      $this->renderLayout(); 	
+        
+    }
+    public function SearchAction() {
+        $buscar = $this->getRequest()->getParam('buscar');
+        echo Mage::helper('buscacorreios')->Buscar($buscar);        
     }
 }
