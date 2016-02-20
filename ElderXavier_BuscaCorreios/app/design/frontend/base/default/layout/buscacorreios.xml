@@ -1,0 +1,12 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <buscacorreios_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="buscacorreios/index" name="buscacorreios_index" template="buscacorreios/index.phtml"/>   
+    </reference>   
+  </buscacorreios_index_index>   
+</layout>   
+	
